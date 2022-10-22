@@ -17,7 +17,6 @@
 
   http://www.arduino.cc/starterKit
 
-  This example code is part of the public domain.
 */
 
 // Create a global variable to hold the state of the switch. This variable is
