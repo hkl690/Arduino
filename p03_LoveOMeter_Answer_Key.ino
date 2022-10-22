@@ -14,7 +14,6 @@
   modified by Jina Wilde
 
   http://www.arduino.cc/starterKit
-  
 */
 
 // named constant for the pin the sensor is connected to
@@ -60,7 +59,6 @@ void loop() {
   float temperature2 = (temperature * 9 / 5 ) + 32;
    Serial.print(temperature2);
  Serial.println(" degrees");
-
 
 
 
