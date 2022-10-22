@@ -16,8 +16,6 @@
   modified by Jina Wilde
 
   http://www.arduino.cc/starterKit
-
-  This example code is part of the public domain.
 */
 
 // include the library code:
@@ -37,31 +35,28 @@ void setup() {
 }
 
 void loop() {
-// read the value on AnalogIn pin 0 and store it in a variable
+  // read the value on AnalogIn pin 0 and store it in a variable
   int sensorVal = analogRead(sensorPin);
   // convert the ADC reading to voltage
   float voltage = (sensorVal / 1024.0) * 5000;
   
   float cel = voltage/ 100;
 
-float farh = (cel*9)/5 + 32;
+  float farh = (cel*9)/5 + 32;
  
-lcd.print("TEMPERATURE = ");
-// move the cursor to the second line
-lcd.setCursor(0, 1);
+  lcd.print("TEMPERATURE = ");
+  // move the cursor to the second line
+  lcd.setCursor(0, 1);
 
-lcd.print(cel);
+  lcd.print(cel);
 
-lcd.setCursor(5,1);
-lcd.print(" C");
+  lcd.setCursor(5,1);
+  lcd.print(" C");
 
-lcd.setCursor(8, 1);
-lcd.print(farh);
-lcd.setCursor(13,1);
-lcd.print(" F");
-delay (1000);
-lcd.clear();
-
+  lcd.setCursor(8, 1);
+  lcd.print(farh);
+  lcd.setCursor(13,1);
+  lcd.print(" F");
+  delay (1000);
+  lcd.clear();
 }
-  
- 
