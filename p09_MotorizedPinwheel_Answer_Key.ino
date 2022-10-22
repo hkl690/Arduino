@@ -17,8 +17,6 @@
   modified by Jina Wilde
 
   http://www.arduino.cc/starterKit
-
-  This example code is part of the public domain.
 */
 
 // named constants for the switch and motor pins
