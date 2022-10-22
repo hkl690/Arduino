@@ -16,7 +16,6 @@
   modified by Jina Wilde
 
   http://www.arduino.cc/starterKit
-
 */
 
 // Create a global variable to hold the state of the switch. This variable is
